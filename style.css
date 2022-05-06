@@ -1,0 +1,155 @@
+body {
+  background-color: #242333;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #222;
+  border: 2px solid #01b0d3;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.header {
+  text-align: center;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 52px;
+}
+
+.header-text {
+  color: #fff;
+  font-family: 'Titillium Web';
+}
+
+.containerBody {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  gap: 100px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 15%;
+  padding: 25px;
+  background-color: #222;
+  text-align: center;
+  color: #edf5e1;
+  border: 1px solid #01b0d3;
+  border-radius: 5px;
+  -webkit-box-shadow:0 0 25px #01b0d3; 
+  -moz-box-shadow: 0 0 25px #01b0d3; 
+  box-shadow:0 0 25px #01b0d3;
+  font-family: 'Roboto';
+}
+
+.tools-title {
+  font-size: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #01b0d3;
+  border-radius: 10px;
+}
+
+.containerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerGrid {
+  display: grid;
+  background-color: white;
+  border: 1px solid #222;
+  width: 600px;
+  height: 600px;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  border-radius: 2px;
+}
+
+.cells {
+  background-color: white;
+  border: 1px solid #444;
+}
+
+.black {
+  background-color: black;
+}
+
+.grid-size {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.containerCells {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cellSize {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.cellSmall, .cellMedium, .cellLarge {
+  width: 33.33%;
+  height: 75px;
+}
+
+
+.gridlines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.gridlines-text {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+footer {
+  margin-top: auto;
+  color: white;
+  font-family: 'Roboto';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.git:hover {
+  transform: scale(1.1);
+}

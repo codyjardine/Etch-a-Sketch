@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+  <title>Etch-a-Sketch</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <span class="header-text header-text-rainbow" id="headerText">ETCH A SKETCH</span>
+  </header>
+  <div class="containerBody" id="containerBody">
+
+    <div class="tools" id="tools">
+      <span class="tools-title">TOOLS</span>
+      <button class="btnBlack" id="btnBlack">Black</button>
+      <button class="btnRainbow" id="btnRainbow">Rainbow</button>
+      <button class="btnEraser" id="btnEraser">Eraser</button>
+
+      <p class="cellSize">Cell Size:</p>
+      <div class="containerCells">
+        <button class="cellSmall" id="cellSmall">Small</button>
+        <button class="cellMedium" id="cellMedium">Medium</button>
+        <button class="cellLarge" id="cellLarge">Large</button>
+      </div>
+      <p class="gridlines-text">Gridlines: </p>
+      <div class="gridlines">
+        <button class="gridOn" id="gridOn">On</button>
+        <button class="gridOff" id="gridOff">Off</button>
+      </div>
+      <button class="btnClear" id="btnClear">CLEAR</button>
+    </div>
+
+    <div class="containerMain" id="containerMain">
+      <div class="containerGrid" id="containerGrid"></div>
+    </div>
+  </div>
+  <footer>Copyright &copy; 2022 codyjardine
+    <a href='https://github.com/codyjardine'><img class='git' src='giticon.png'></a>
+  </footer>
+
+  
+</body>
+</html>
