@@ -105,8 +105,8 @@ btnSmall.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#01b0d3';
   btnGridOff.style.backgroundColor = '#222';
   delGrid();
-  gridSize(16);
-  generateGrid(16);
+  gridSize(64);
+  generateGrid(64);
 })
 
 btnMedium.addEventListener('click', () => {
@@ -133,8 +133,8 @@ btnLarge.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#01b0d3';
   btnGridOff.style.backgroundColor = '#222';
   delGrid();
-  gridSize(64);
-  generateGrid(64);
+  gridSize(16);
+  generateGrid(16);
 })
 
 function delGrid() {
