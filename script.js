@@ -146,7 +146,8 @@ btnGridOn.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#01b0d3';
   btnGridOff.style.backgroundColor = '#222';
   allCells.forEach((allCells) => {
-    allCells.style.cssText = 'border: 1px solid #444;';
+    allCells.style.removeProperty('border');
+    allCells.style.setProperty('border', '1px solid #444');
   })
 })
 
@@ -155,6 +156,6 @@ btnGridOff.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#222';
   btnGridOff.style.backgroundColor = '#01b0d3';
   allCells.forEach((allCells) => {
-    allCells.style.cssText = 'border: none;';
+    allCells.style.setProperty('border', 'none');
   })
 })
