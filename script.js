@@ -105,8 +105,8 @@ btnSmall.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#01b0d3';
   btnGridOff.style.backgroundColor = '#222';
   delGrid();
-  gridSize(64);
-  generateGrid(64);
+  gridSize(16);
+  generateGrid(16);
 })
 
 btnMedium.addEventListener('click', () => {
@@ -133,8 +133,8 @@ btnLarge.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#01b0d3';
   btnGridOff.style.backgroundColor = '#222';
   delGrid();
-  gridSize(16);
-  generateGrid(16);
+  gridSize(64);
+  generateGrid(64);
 })
 
 function delGrid() {
@@ -146,7 +146,8 @@ btnGridOn.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#01b0d3';
   btnGridOff.style.backgroundColor = '#222';
   allCells.forEach((allCells) => {
-    allCells.style.cssText = 'border: 1px solid #444;';
+    allCells.style.removeProperty('border');
+    allCells.style.setProperty('border', '1px solid #444');
   })
 })
 
@@ -155,6 +156,6 @@ btnGridOff.addEventListener('click', () => {
   btnGridOn.style.backgroundColor = '#222';
   btnGridOff.style.backgroundColor = '#01b0d3';
   allCells.forEach((allCells) => {
-    allCells.style.cssText = 'border: none;';
+    allCells.style.setProperty('border', 'none');
   })
 })
